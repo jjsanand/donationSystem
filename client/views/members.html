@@ -1,0 +1,37 @@
+<div class="panel panel-default" ng-init = "getMembers()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Members</h3>
+      <h3 class="panel-title" style="text-align: right"> <a class="btn btn-default" href="#!/members/add"> add Member</a> </h3>
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+  </div>
+  <div class="panel-body">
+   <table class="table table-striped">
+   <thead>
+      <tr>
+        <th>Account #</th>
+         <th>First Name</th>
+         <th>Last Name</th>
+         <th>City</th>
+         <th>Phone Number</th>
+         <th></th>
+      </tr>
+   </thead>
+   <tbody>
+      <!-- Now just ng-repeat the rows -->
+      <tr ng-repeat="member in members">
+        <td>{{member.acctno}}</td>
+         <td>{{member.fname}}</td>
+         <td>{{member.lname}}</td>
+         <td>{{member.address.city}}</td>
+         <td>{{member.mobileno}}</td>
+         <td><a class="btn-primary btn-sm" href="#!/members/details/{{member._id}}"> View Details</a>
+
+
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+</div>

@@ -1,0 +1,10 @@
+.panel-title.p
+{
+	display: inline-block;
+	float:  right;
+}
+
+.required:after 
+{ 
+	content:" *"; 
+}

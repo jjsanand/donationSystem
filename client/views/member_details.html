@@ -1,0 +1,34 @@
+<a class="btn btn-primary" href="#!/members/"> Go Back</a>
+
+<div class="panel panel-default" ng-init = "getMember()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Member Info</h3>
+  </div>
+  <div class="panel-body">
+
+  	<ul class ="list-group">
+
+  		<li class="list-group-item"> Account No: {{member.acctno}}</li>
+  		<li class="list-group-item"> First Name: {{member.fname}}</li>
+  		<li class="list-group-item"> Middle Name: {{member.mname}}</li>
+  		<li class="list-group-item"> Last Name: {{member.lname}}</li>
+  		<li class="list-group-item"> Street: {{member.address.street}}</li>
+  		<li class="list-group-item"> Apt #: {{member.address.aptno}}</li>
+  		<li class="list-group-item"> City: {{member.address.city}}</li>
+  		<li class="list-group-item"> State: {{member.address.state}}</li>
+  		<li class="list-group-item"> Country: {{member.address.country}}</li>
+  		<li class="list-group-item"> Zipcode: {{member.address.zipcode}}</li>
+  		<li class="list-group-item"> Cell Phone: {{member.mobileno}}</li>
+  		<li class="list-group-item"> Home Phone: {{member.homephno}}</li>
+  		<li class="list-group-item"> E-mail: {{member.email}}</li>
+
+  	</ul>
+   
+	</div>
+</div>
+
+<div class="pull-right">
+  
+   <a class="btn-primary btn-sm" href="#!/members/edit/{{member._id}}"> Edit</a>
+    |  <a class="btn-primary btn-sm" href="#" ng-click = "removeMember(member._id)"> Delete</a>
+</div>

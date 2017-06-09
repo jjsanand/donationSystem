@@ -1,0 +1,119 @@
+
+<a class="btn btn-primary" href="#!/members/"> Go Back</a
+
+<div class="panel panel-default">
+  <div class="panel panel-default">
+<p>
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit Member</h3>
+  </div>
+  <div class="panel-body">
+      <div class="row">
+        <div class ="col-md-12">
+          <form ng-submit = "updateMember()" ng-init = "getMember()">
+
+              <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" class="form-control"  ng-model="member.fname">
+              </div>
+
+              <div class="form-group">
+                  <label>Middle Name</label>
+                  <input type="text" class="form-control" ng-model="member.mname" placeholder="Middle Name">
+              </div>
+
+              <div class="form-group">
+                  <label>Last Name</label>
+                  <input type="text" class="form-control" ng-model="member.lname" placeholder="Last Name">
+              </div>
+           </form>
+           </div>
+       </div>
+
+  </div>
+  </p>
+</div>
+
+
+<div class="panel panel-default">
+<p>
+  <div class="panel-heading">
+    <h3 class="panel-title">Address</h3>
+  </div>
+  <div class="panel-body">
+      <div class="row">
+      <div class ="col-md-12">
+          <form ng-submit = "updateMember()" ng-init = "getMember()">
+
+              <div class="form-group">
+                  <label>Street (No. and Name)</label>
+                  <input type="text" class="form-control"  ng-model="member.address.street" placeholder="Street no. and name">
+              </div>
+
+              <div class="form-group">
+                  <label>Apt #</label>
+                  <input type="text" class="form-control" ng-model="member.address.aptno" placeholder="Apt #">
+              </div>
+
+              <div class="form-group">
+                  <label>City</label>
+                  <input type="text" class="form-control" ng-model="member.address.city" placeholder="city">
+              </div>
+
+              <div class="form-group">
+                  <label>State</label>
+                  <input type="text" class="form-control" ng-model="member.address.state" placeholder="state">
+              </div>
+
+              <div class="form-group">
+                  <label>Country</label>
+                  <input type="text" class="form-control" ng-model="member.address.country" placeholder="country">
+              </div>
+
+              <div class="form-group">
+                  <label>Zipcode</label>
+                  <input type="number" pattern ="[0-9]{5}" class="form-control" ng-model="member.address.zipcode" placeholder="zipcode">
+              </div>
+           </form>
+           </div>
+       </div>
+
+  </div>
+  </p>
+</div>
+
+<div class="panel panel-default">
+<p>
+  <div class="panel-heading">
+    <h3 class="panel-title">Contact Info</h3>
+  </div>
+  <div class="panel-body">
+      <div class="row">
+      <div class ="col-md-12">
+         <form ng-submit = "updateMember()" ng-init = "getMember()">
+
+              <div class="form-group">
+                  <label>Cell #</label>
+                  <input type="number" pattern ="[0-9]{10,}" class="form-control" ng-model="member.mobileno" placeholder="888-888-8888">
+              </div>
+
+              <div class="form-group">
+                  <label>Home #</label>
+                  <input type="number" pattern ="[0-9]{10,}" class="form-control" ng-model="member.homephno" placeholder="888-888-8888">
+              </div>
+
+              <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control" ng-model="member.email" placeholder="blank@blank.com">
+              </div>
+              <button type="submit" class=" btn btn-primary"> Submit</button>
+           </form>
+           </div>
+       </div>
+
+  </div>
+  </p>
+</div>
+
+
+</div>
